@@ -61,6 +61,8 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
             Model.shared.deselecionouIng(ingrediente: Model.shared.ingredientesTotais[indexPath.row])
             Model.shared.ingredientesTotais[indexPath.row].selecao = false
         }
+        print("\(Model.shared.ingredientesSelecionados.count)")
+
         
     }
 
@@ -72,6 +74,8 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         collectionVoew.dataSource  = self
         // Do any additional setup after loading the view.
     }
+    
+    
 
 
 }
