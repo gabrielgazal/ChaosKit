@@ -16,9 +16,10 @@ class Model {
     
     var receitaFav: [ReceitaClass] = []
     var ingredientesSelecionados: [IngredienteClass]  = []
+    var receitasPossiveis: [ReceitaClass] = []
     var receitas: [ReceitaClass] = [
-        ReceitaClass(nome: "bolo", ingredientes: ["bb","cc"], imagem: UIImage(named: "bolo")! ),
-        ReceitaClass(nome: "torta", ingredientes: ["ff","gg"], imagem: UIImage(named: "torta")!)
+        ReceitaClass(nome: "bolo", ingredientes: ["flour","milk"], imagem: UIImage(named: "bolo")! ),
+        ReceitaClass(nome: "torta", ingredientes: ["salt","milk"], imagem: UIImage(named: "torta")!)
     ]
     var ingredientesTotais: [IngredienteClass] = [
         IngredienteClass(nome: "salt", icone: UIImage(named: "salt")!),
@@ -30,7 +31,7 @@ class Model {
         IngredienteClass(nome: "flour", icone: UIImage(named: "flour")!),
         IngredienteClass(nome: "soda", icone: UIImage(named: "soda")!),
         IngredienteClass(nome: "vinegar", icone: UIImage(named: "vinegar")!)
-    
+        
     ]
     
     func adicionarFavorito(receita: ReceitaClass){
@@ -42,9 +43,33 @@ class Model {
     
     func selecionouIng(ingrediente: IngredienteClass){
         ingredientesSelecionados.append(ingrediente)
-
+        
     }
     func deselecionouIng(ingrediente: IngredienteClass){
         ingredientesSelecionados = ingredientesSelecionados.filter() { $0 !== ingrediente}
+    }
+    
+    func ProcuraReceita() -> [ReceitaClass]{
+        receitasPossiveis = []
+        for receita in receitas{
+            var temIngrediente: Bool
+            var addREceita = true
+            for  ingReceita in receita.ingredientes{
+                temIngrediente = false
+                for ingrediente in ingredientesSelecionados{
+                    if ingrediente.nome == ingReceita{
+                        temIngrediente = true
+                    }
+                }
+                
+                if !temIngrediente {
+                    addREceita = false
+                }
+            }
+            if addREceita{
+                receitasPossiveis.append(receita)
+            }
+        }
+        return receitasPossiveis
     }
 }

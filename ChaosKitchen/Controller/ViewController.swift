@@ -19,6 +19,13 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
     
     @IBOutlet weak var collectionVoew: UICollectionView!
     
+    @IBAction func geraReceitas(_ sender: Any) {
+        Model.shared.ProcuraReceita()
+//        print(Model.shared.receitasPossiveis)
+        for receita in Model.shared.receitasPossiveis {
+            print(receita.nome)
+        }
+    }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = (collectionView.frame.width - spacing) / 3.5
         return CGSize(width: width, height: width * 1.3)
@@ -48,6 +55,14 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         let ingrediente = Model.shared.ingredientesTotais[indexPath.row]
         cell.imageIngrediente.image = ingrediente.icone
         cell.NomeIngrediente.text = ingrediente.nome
+        cell.clipsToBounds = true
+        cell.layer.cornerRadius = 20
+        cell.layer.borderWidth = 2
+        if ingrediente.selecao == true {
+            cell.layer.borderColor = UIColor.green.cgColor
+        } else{
+        cell.layer.borderColor = UIColor.red.cgColor
+        }
         
         return cell
     }
@@ -62,6 +77,7 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
             Model.shared.ingredientesTotais[indexPath.row].selecao = false
         }
         print("\(Model.shared.ingredientesSelecionados.count)")
+        refreshCell()
 
         
     }
@@ -73,6 +89,10 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         collectionVoew.delegate  = self
         collectionVoew.dataSource  = self
         // Do any additional setup after loading the view.
+    }
+    
+     func refreshCell(){
+        collectionVoew.reloadData()
     }
     
     

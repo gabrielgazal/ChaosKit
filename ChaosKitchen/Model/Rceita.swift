@@ -20,5 +20,6 @@ class ReceitaClass{
     var nome: String
     var ingredientes: [String]
     var imagem: UIImage?
+    
     var favoritado: Bool = false
 }
