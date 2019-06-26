@@ -56,12 +56,12 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         cell.imageIngrediente.image = ingrediente.icone
         cell.NomeIngrediente.text = ingrediente.nome
         cell.clipsToBounds = true
-        cell.layer.cornerRadius = 20
-        cell.layer.borderWidth = 2
+        cell.layer.cornerRadius = 15
+        cell.layer.borderWidth = 3
         if ingrediente.selecao == true {
-            cell.layer.borderColor = UIColor.green.cgColor
+            cell.layer.borderColor = UIColor.clear.cgColor
         } else{
-        cell.layer.borderColor = UIColor.red.cgColor
+        cell.layer.borderColor = UIColor.init(hue: 33, saturation: 0, brightness: 59, alpha: 1).cgColor
         }
         
         return cell
@@ -88,6 +88,7 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         super.viewDidLoad()
         collectionVoew.delegate  = self
         collectionVoew.dataSource  = self
+        self.navigationController?.navigationBar.isHidden = true
         // Do any additional setup after loading the view.
     }
     
