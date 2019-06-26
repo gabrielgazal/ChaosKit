@@ -21,8 +21,12 @@ class Model {
     var ingredientesSelecionados: [IngredienteClass]  = []
     var receitasPossiveis: [ReceitaClass] = []
     var receitas: [ReceitaClass] = [
-        ReceitaClass(nome: "bolo", ingredientes: ["Farinha","Leite"], imagem: UIImage(named: "bolo")! ),
-        ReceitaClass(nome: "torta", ingredientes: ["Sal","Leite"], imagem: UIImage(named: "torta")!)
+        ReceitaClass(nome: "Bolo de Cenoura", ingredientes: ["Farinha","Leite"], imagem: UIImage(named: "bolo")! ),
+        ReceitaClass(nome: "Torta Alemã", ingredientes: ["Sal","Leite"], imagem: UIImage(named: "torta")!),
+        ReceitaClass(nome: "Petit Gateau", ingredientes: ["Sal","Leite"], imagem: UIImage(named: "torta")!),
+        ReceitaClass(nome: "Quiche de Brócolis", ingredientes: ["Sal","Manteiga"], imagem: UIImage(named: "torta")!),
+        ReceitaClass(nome: "Lasanha Quatro Queijos", ingredientes: ["Sal","Leite"], imagem: UIImage(named: "torta")!),
+        ReceitaClass(nome: "Macarrão Quatro Queijos", ingredientes: ["Vinagre","Leite"], imagem: UIImage(named: "torta")!)
     ]
     var ingredientesTotais: [IngredienteClass] = [
         IngredienteClass(nome: "Sal", icone: UIImage(named: "salt")!),

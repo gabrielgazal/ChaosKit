@@ -65,7 +65,7 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         cell.layer.masksToBounds = false
         cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
         if ingrediente.selecao == true {
-            cell.layer.borderColor = UIColor.gray.cgColor
+            cell.layer.borderColor = UIColor(hue: 0.0, saturation: 0.0, brightness: 0.59, alpha: 1.0).cgColor
         } else{
         cell.layer.borderColor = UIColor.clear.cgColor
         }

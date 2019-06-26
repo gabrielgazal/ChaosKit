@@ -12,6 +12,8 @@ class ReceitasTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.title = "Receitas Possíveis"
+//        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Headliner No. 45", size: 35)!]
         //        self.navigationController?.navigationBar.isHidden = false
         
         // Uncomment the following line to preserve selection between presentations
@@ -45,23 +47,33 @@ class ReceitasTableViewController: UITableViewController {
         }
         return resultado
     }
-    
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        
-        
-        return "aaaa"
-    }
+
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        let textoHeader = UILabel(frame: CGRect(x: tableView.frame.width/2, y: 0, width: tableView.frame.width, height: 20))
-        textoHeader.text = "RECEITAS POSSIVEIS"
-        textoHeader.font = UIFont(name: "Headliner No. 45", size: 30)
-        textoHeader.textColor = .blue
+        let viewAa = UIView()
+        let textoHeader = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 75))
+        textoHeader.text = "RECEITAS POSSÍVEIS"
+        textoHeader.font = UIFont(name: "Headliner No. 45", size: 75)
+        textoHeader.textColor = UIColor(hue: 360.0, saturation: 0.0, brightness: 0.17, alpha: 1.0)
 //        textoHeader.center = CGPoint(x: (vw.frame.size.width/2), y: (vw.frame.size.height/2))
         textoHeader.textAlignment = .center
-//
-        return textoHeader
+        textoHeader.sizeToFit()
+        textoHeader.adjustsFontSizeToFitWidth = true
+//        textoHeader.baselineAdjustment = .alignBaselines
+//        textoHeader.backgroundColor = .green
+        
+        viewAa.addSubview(textoHeader)
+//        viewAa.backgroundColor = .red
+        viewAa.frame.size.height = 80
+        textoHeader.center.x = self.view.center.x
+        textoHeader.center.y = viewAa.center.y
+        
+        return viewAa
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 75
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "celula", for: indexPath) as! TableViewCell
