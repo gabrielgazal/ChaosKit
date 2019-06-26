@@ -12,6 +12,7 @@ class TableViewCell: UITableViewCell {
 
     @IBOutlet weak var imagemReceita: UIImageView!
     @IBOutlet weak var nomeReceita: UILabel!
+    @IBOutlet weak var filtro: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

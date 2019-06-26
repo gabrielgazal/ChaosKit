@@ -12,12 +12,17 @@ class ReceitasTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //        self.navigationController?.navigationBar.isHidden = false
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = false
+        
     }
     
     // MARK: - Table view data source
@@ -26,6 +31,7 @@ class ReceitasTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -40,7 +46,23 @@ class ReceitasTableViewController: UITableViewController {
         return resultado
     }
     
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        
+        return "aaaa"
+    }
     
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let textoHeader = UILabel(frame: CGRect(x: tableView.frame.width/2, y: 0, width: tableView.frame.width, height: 20))
+        textoHeader.text = "RECEITAS POSSIVEIS"
+        textoHeader.font = UIFont(name: "Headliner No. 45", size: 30)
+        textoHeader.textColor = .blue
+//        textoHeader.center = CGPoint(x: (vw.frame.size.width/2), y: (vw.frame.size.height/2))
+        textoHeader.textAlignment = .center
+//
+        return textoHeader
+    }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "celula", for: indexPath) as! TableViewCell
         
@@ -54,6 +76,9 @@ class ReceitasTableViewController: UITableViewController {
             cell.nomeReceita.text = recept.nome
             // Configure the cell...
         }
+        cell.imagemReceita.layer.cornerRadius = 15
+        cell.filtro.layer.cornerRadius = 15
+        
         return cell
     }
     

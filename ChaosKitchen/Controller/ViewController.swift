@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    var spacing : CGFloat = 0.03 * UIScreen.main.bounds.width
+    var spacing : CGFloat = 0.05 * UIScreen.main.bounds.width
 
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -27,8 +27,8 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         }
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = (collectionView.frame.width - spacing) / 3.5
-        return CGSize(width: width, height: width * 1.3)
+        let width = (collectionView.frame.width - 3 *  spacing) / 3
+        return CGSize(width: width, height: width * 1.15)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -36,11 +36,11 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return spacing
+        return spacing/2
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return spacing
+        return spacing/2
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return Model.shared.ingredientesTotais.count
@@ -58,10 +58,16 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         cell.clipsToBounds = true
         cell.layer.cornerRadius = 15
         cell.layer.borderWidth = 3
+        cell.layer.shadowColor  = UIColor.lightGray.cgColor
+        cell.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        cell.layer.shadowRadius = 5.0
+        cell.layer.shadowOpacity = 0.5
+        cell.layer.masksToBounds = false
+        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
         if ingrediente.selecao == true {
-            cell.layer.borderColor = UIColor.clear.cgColor
+            cell.layer.borderColor = UIColor.gray.cgColor
         } else{
-        cell.layer.borderColor = UIColor.init(hue: 33, saturation: 0, brightness: 59, alpha: 1).cgColor
+        cell.layer.borderColor = UIColor.clear.cgColor
         }
         
         return cell
@@ -88,8 +94,12 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         super.viewDidLoad()
         collectionVoew.delegate  = self
         collectionVoew.dataSource  = self
-        self.navigationController?.navigationBar.isHidden = true
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+
     }
     
      func refreshCell(){

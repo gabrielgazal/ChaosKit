@@ -12,6 +12,7 @@
 		56648D1722C33D8900AD4C49 /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 56648D1422C33D8900AD4C49 /* Montserrat-Bold.otf */; };
 		56648D1822C33D8900AD4C49 /* Montserrat-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 56648D1522C33D8900AD4C49 /* Montserrat-BoldItalic.otf */; };
 		56648D1922C33D8900AD4C49 /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 56648D1622C33D8900AD4C49 /* Montserrat-Medium.otf */; };
+		56648D1B22C340A400AD4C49 /* rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56648D1A22C340A400AD4C49 /* rounded.swift */; };
 		56650A9A22C0227B005DCBD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56650A9922C0227B005DCBD3 /* AppDelegate.swift */; };
 		56650A9C22C0227B005DCBD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56650A9B22C0227B005DCBD3 /* ViewController.swift */; };
 		56650A9F22C0227B005DCBD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56650A9D22C0227B005DCBD3 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		56648D1422C33D8900AD4C49 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Bold.otf"; path = "../../../../../../../Downloads/montserrat/Montserrat-Bold.otf"; sourceTree = "<group>"; };
 		56648D1522C33D8900AD4C49 /* Montserrat-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-BoldItalic.otf"; path = "../../../../../../../Downloads/montserrat/Montserrat-BoldItalic.otf"; sourceTree = "<group>"; };
 		56648D1622C33D8900AD4C49 /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Medium.otf"; path = "../../../../../../../Downloads/montserrat/Montserrat-Medium.otf"; sourceTree = "<group>"; };
+		56648D1A22C340A400AD4C49 /* rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rounded.swift; sourceTree = "<group>"; };
 		56650A9622C0227B005DCBD3 /* ChaosKitchen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaosKitchen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56650A9922C0227B005DCBD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56650A9B22C0227B005DCBD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				56650A9D22C0227B005DCBD3 /* Main.storyboard */,
 				56650AA222C0227E005DCBD3 /* LaunchScreen.storyboard */,
 				56650AA022C0227E005DCBD3 /* Assets.xcassets */,
+				56648D1A22C340A400AD4C49 /* rounded.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56650AB322C02328005DCBD3 /* Rceita.swift in Sources */,
+				56648D1B22C340A400AD4C49 /* rounded.swift in Sources */,
 				5687451E22C149D6003F3634 /* TableViewCell.swift in Sources */,
 				56650AAF22C0230B005DCBD3 /* Model.swift in Sources */,
 				562F90CB22C0716E00F9EE84 /* CollectionViewCell.swift in Sources */,
