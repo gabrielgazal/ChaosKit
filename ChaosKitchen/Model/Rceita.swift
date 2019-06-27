@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class ReceitaClass{
-    internal init(nome: String, ingredientes: [String], quantidades: [Float], unidade: [String], imagem: UIImage?, passos: [String], dificuldade: String, tempoPreparo: Int, rendimento: Int) {
+    internal init(nome: String, ingredientes: [String], quantidades: [String], unidade: [String], imagem: UIImage?, passos: [String], dificuldade: String, tempoPreparo: Int, rendimento: Int) {
         self.nome = nome
         self.ingredientes = ingredientes
         self.quantidades = quantidades
@@ -25,7 +25,7 @@ class ReceitaClass{
     
     var nome: String
     var ingredientes: [String]
-    var quantidades: [Float]
+    var quantidades: [String]
     var unidade: [String]
     var imagem: UIImage?
     var passos: [String]

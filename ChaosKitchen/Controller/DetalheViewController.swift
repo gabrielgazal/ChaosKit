@@ -12,6 +12,9 @@ class DetalheViewController: UIViewController {
 
     @IBOutlet weak var imagemReceita: UIImageView!
     @IBOutlet weak var nomeReceita: UILabel!
+    @IBOutlet weak var dificuldad: UILabel!
+    @IBOutlet weak var tempo: UILabel!
+    @IBOutlet weak var ingredientes: UITextView!
     
     var receitaSelecionada = 0
 
@@ -21,8 +24,20 @@ class DetalheViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
-        imagemReceita.image = Model.shared.receitasPossiveis[receitaSelecionada].imagem
-        nomeReceita.text = Model.shared.receitasPossiveis[receitaSelecionada].nome
+        
+        let recpt = Model.shared.receitasPossiveis[receitaSelecionada]
+
+        imagemReceita.image = recpt.imagem
+        nomeReceita.text = recpt.nome
+        dificuldad.text = recpt.dificuldade
+        tempo.text = "\(recpt.tempoPreparo) minutos"
+        ingredientes.text = ""
+        
+        for (indice,item) in recpt.ingredientes.enumerated() {
+            ingredientes.text += "- \(recpt.quantidades[indice])"
+            ingredientes.text += " \(recpt.unidade[indice]) de "
+            ingredientes.text += "\(item) \n"
+        }
         imagemReceita.layer.cornerRadius = 15
         
         

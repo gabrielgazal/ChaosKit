@@ -51,6 +51,15 @@ class FavoritosViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
 
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "detalhe") as? DetalheViewController{
+            if Model.shared.receitaFav.count != 0{
+                vc.receitaSelecionada = indexPath.row
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         tableVoiewFav.delegate = self

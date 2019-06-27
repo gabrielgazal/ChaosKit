@@ -131,7 +131,7 @@ class ReceitasTableViewController: UITableViewController {
         })
         
         action.image = UIImage(named: favorite ? "fav" : "unfav")
-        action.backgroundColor = UIColor(hue: 0.0, saturation: 0.0, brightness: 0.91, alpha: 0.0) //favorite ? .red : .green
+        action.backgroundColor = UIColor(hue: 00, saturation: 0.0, brightness: 0.91, alpha: 0.0) //favorite ? .red : .green
         let configuration = UISwipeActionsConfiguration(actions: [action])
         return configuration
     }
