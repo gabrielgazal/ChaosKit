@@ -42,6 +42,8 @@
 		<string>Montserrat-Bold.otf</string>
 		<string>Montserrat-BoldItalic.otf</string>
 		<string>Montserrat-Medium.otf</string>
+		<string>Montserrat-SemiBoldItalic.otf</string>
+		<string>Montserrat-LightItalic.otf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

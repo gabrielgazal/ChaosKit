@@ -21,7 +21,9 @@ class Model {
     var ingredientesSelecionados: [IngredienteClass]  = []
     var receitasPossiveis: [ReceitaClass] = []
     var receitas: [ReceitaClass] = [
-        ReceitaClass(nome: "Bolo de Cenoura", ingredientes: ["Óleo","Cenoura","Ovos","Açúcar","Farinha","Fermento"], quantidades: [Int(0.5),3,4,2,Int(2.5),1], unidade: ["xícara","","","xícaras","xícaras","colher de sopa"], imagem: UIImage(named: "bolo"), passos: ["misturar","assar","comer"], dificuldade: 3, tempoPreparo: 40, rendimento: 8)
+        ReceitaClass(nome: "Bolo de Cenoura", ingredientes: ["Oleo","Cenoura","Ovos","Açúcar","Farinha","Fermento"], quantidades: [0.5,3,4,2,2.5,1], unidade: ["xícara","","","xícaras","xícaras","colher de sopa"], imagem: UIImage(named: "bolo"), passos: ["misturar","assar","comer"], dificuldade: "Iniciante", tempoPreparo: 40, rendimento: 8)
+//
+//        ReceitaClass(nome: "bolo", ingredientes: ["Sal","Leite"], quantidades: [2.5,1], unidade: ["xicaras","colheres"], imagem: UIImage(named: "bolo"), passos: ["ddd","ddd"], dificuldade: "medio", tempoPreparo: 2, rendimento: 4)
 
     ]
     var ingredientesTotais: [IngredienteClass] = [

@@ -13,6 +13,12 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var imagemReceita: UIImageView!
     @IBOutlet weak var nomeReceita: UILabel!
     @IBOutlet weak var filtro: UIView!
+    @IBOutlet weak var dificuldadeLabel: UILabel!
+    @IBOutlet weak var tempoLabel: UILabel!
+    @IBOutlet weak var dificuldade: UILabel!
+    @IBOutlet weak var tempodepreparo: UILabel!
+    @IBOutlet weak var nenhumz: UILabel!
+    @IBOutlet weak var sombrea: RoundedButton! 
     
     override func awakeFromNib() {
         super.awakeFromNib()

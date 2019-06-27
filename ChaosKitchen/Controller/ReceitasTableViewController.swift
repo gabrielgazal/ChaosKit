@@ -49,49 +49,59 @@ class ReceitasTableViewController: UITableViewController {
         return resultado
     }
     
+   
     
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        
-        let viewAa = UIView()
-        let textoHeader = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 75))
-        textoHeader.text = "RECEITAS POSSÍVEIS"
-        textoHeader.font = UIFont(name: "Headliner No. 45", size: 70)
-        textoHeader.textColor = UIColor(hue: 360.0, saturation: 0.0, brightness: 0.17, alpha: 1.0)
-        //        textoHeader.center = CGPoint(x: (vw.frame.size.width/2), y: (vw.frame.size.height/2))
-        textoHeader.textAlignment = .center
-        textoHeader.sizeToFit()
-        textoHeader.adjustsFontSizeToFitWidth = true
-        
-        //        textoHeader.baselineAdjustment = .alignBaselines
-        //        textoHeader.backgroundColor = .green
-        
-        viewAa.addSubview(textoHeader)
-        //        viewAa.backgroundColor = .red
-        viewAa.frame.size.height = 80
-        textoHeader.center.x = self.view.center.x
-        textoHeader.center.y = viewAa.center.y
-        
-        return viewAa
-    }
+   
     
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 75
-    }
+//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//
+//        let viewAa = UIView()
+//        let textoHeader = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 75))
+//        textoHeader.text = "RECEITAS POSSÍVEIS"
+//        textoHeader.font = UIFont(name: "Headliner No. 45", size: 50)
+//        textoHeader.textColor = UIColor(hue: 360.0, saturation: 0.0, brightness: 0.17, alpha: 1.0)
+//        textoHeader.textAlignment = .center
+//        textoHeader.sizeToFit()
+//        textoHeader.adjustsFontSizeToFitWidth = true
+//
+//        viewAa.addSubview(textoHeader)
+//        viewAa.frame.size.height = 80
+//        textoHeader.center.x = self.view.center.x
+//        textoHeader.center.y = viewAa.center.y
+//
+//        return viewAa
+//    }
+//    
+//    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return 75
+//    }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "celula", for: indexPath) as! TableViewCell
         
         if Model.shared.receitasPossiveis.count == 0{
             cell.imagemReceita.isHidden = true
-            cell.nomeReceita.text = "Nao ha receitas disponiveis"
+            cell.nomeReceita.isHidden = true
+            cell.dificuldadeLabel.isHidden = true
+            cell.tempoLabel.isHidden = true
+            cell.dificuldade.isHidden = true
+            cell.tempodepreparo.isHidden = true
+            cell.filtro.isHidden = true
+            cell.sombrea.isHidden = true
+            cell.nenhumz.isHidden = false
             
         }else{
             let recept = Model.shared.receitasPossiveis[indexPath.row]
             cell.imagemReceita.image = recept.imagem
             cell.nomeReceita.text = recept.nome
-            // Configure the cell...
+            cell.dificuldadeLabel.text = recept.dificuldade
+            cell.tempoLabel.text = "\(recept.tempoPreparo) minutos"
+            cell.nenhumz.isHidden = true
+
         }
         cell.imagemReceita.layer.cornerRadius = 15
         cell.filtro.layer.cornerRadius = 15
+        
+        
         
         return cell
     }
