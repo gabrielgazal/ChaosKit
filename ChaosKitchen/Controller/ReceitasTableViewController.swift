@@ -115,6 +115,27 @@ class ReceitasTableViewController: UITableViewController {
         }
     }
     
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        // Get current state from data source
+        let favorite = Model.shared.receitasPossiveis[indexPath.row].favoritado
+        
+        let title = ""
+        
+        let action = UIContextualAction(style: .normal, title: title,
+                                        handler: { (action, view, completionHandler) in
+                                            // Update data source when user taps action
+                                            //
+            Model.shared.receitasPossiveis[indexPath.row].favoritado.toggle()
+            completionHandler(true)
+            tableView.reloadData()
+        })
+        
+        action.image = UIImage(named: favorite ? "fav" : "unfav")
+        action.backgroundColor = UIColor(hue: 0.0, saturation: 0.0, brightness: 0.91, alpha: 0.0) //favorite ? .red : .green
+        let configuration = UISwipeActionsConfiguration(actions: [action])
+        return configuration
+    }
+    
     
     /*
      // Override to support conditional editing of the table view.

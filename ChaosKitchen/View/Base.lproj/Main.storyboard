@@ -159,6 +159,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="separatorColor" red="0.92941176469999998" green="0.27058823529999998" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="celula" rowHeight="169" id="vqm-fL-pnM" customClass="TableViewCell" customModule="ChaosKitchen" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="414" height="169"/>
@@ -266,7 +267,7 @@
                                         <constraint firstItem="Yv4-9l-qgX" firstAttribute="top" secondItem="4EV-90-eIU" secondAttribute="topMargin" constant="30" id="z5i-2B-cPi"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dificuldade" destination="4un-OK-z47" id="hwd-KU-IBu"/>
                                     <outlet property="dificuldadeLabel" destination="skd-GH-rs0" id="PLL-wu-Q9k"/>
@@ -388,15 +389,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pge-I9-mTk">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pge-I9-mTk">
                                 <rect key="frame" x="0.0" y="106.5" width="414" height="706.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celulafav" rowHeight="165" id="GAQ-lp-02j" customClass="FavoritosCellTableViewCell" customModule="ChaosKitchen" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="165"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GAQ-lp-02j" id="RZI-LB-UCA">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="164.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="165"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0U-H3-xDa" customClass="RoundedButton" customModule="ChaosKitchen" customModuleProvider="target">
@@ -411,7 +412,7 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </button>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dx6-O6-aim">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dx6-O6-aim">
                                                     <rect key="frame" x="10" y="10" width="394" height="135"/>
                                                 </imageView>
                                                 <view userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2BL-5P-GlG">
@@ -529,6 +530,9 @@
                         <viewLayoutGuide key="safeArea" id="Q4W-UP-rct"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Favoritos" image="favs" id="YsL-T8-bL5"/>
+                    <connections>
+                        <outlet property="tableVoiewFav" destination="Pge-I9-mTk" id="7K8-NY-aeN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="syo-V1-Wp9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

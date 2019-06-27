@@ -17,7 +17,9 @@ class Model {
         ingredientesTotais = ingredientesTotais.sorted(by: {$0.nome < $1.nome})
     }
     
-    var receitaFav: [ReceitaClass] = []
+    var receitaFav: [ReceitaClass] {
+        return receitas.filter({receita in receita.favoritado})
+    }
     var ingredientesSelecionados: [IngredienteClass]  = []
     var receitasPossiveis: [ReceitaClass] = []
     var receitas: [ReceitaClass] = [
@@ -67,12 +69,12 @@ class Model {
     ]
     
     
-    func adicionarFavorito(receita: ReceitaClass){
-        receitaFav.append(receita)
-    }
-    func removerFavorito(receita: ReceitaClass){
-        receitaFav = receitaFav.filter() { $0 !== receita}
-    }
+//    func adicionarFavorito(receita: ReceitaClass){
+//        receitaFav.append(receita)
+//    }
+//    func removerFavorito(receita: ReceitaClass){
+//        receitaFav = receitaFav.filter() { $0 !== receita}
+//    }
     
     func selecionouIng(ingrediente: IngredienteClass){
         ingredientesSelecionados.append(ingrediente)
