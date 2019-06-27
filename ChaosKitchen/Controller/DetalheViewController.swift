@@ -23,6 +23,7 @@ class DetalheViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         imagemReceita.image = Model.shared.receitasPossiveis[receitaSelecionada].imagem
         nomeReceita.text = Model.shared.receitasPossiveis[receitaSelecionada].nome
+        imagemReceita.layer.cornerRadius = 15
         
     }
     

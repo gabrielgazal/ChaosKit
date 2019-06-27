@@ -21,12 +21,8 @@ class Model {
     var ingredientesSelecionados: [IngredienteClass]  = []
     var receitasPossiveis: [ReceitaClass] = []
     var receitas: [ReceitaClass] = [
-        ReceitaClass(nome: "Bolo de Cenoura", ingredientes: ["Farinha","Leite"], imagem: UIImage(named: "bolo")! ),
-        ReceitaClass(nome: "Torta Alemã", ingredientes: ["Sal","Leite"], imagem: UIImage(named: "torta")!),
-        ReceitaClass(nome: "Petit Gateau", ingredientes: ["Sal","Leite"], imagem: UIImage(named: "torta")!),
-        ReceitaClass(nome: "Quiche de Brócolis", ingredientes: ["Sal","Manteiga"], imagem: UIImage(named: "torta")!),
-        ReceitaClass(nome: "Lasanha Quatro Queijos", ingredientes: ["Sal","Leite"], imagem: UIImage(named: "torta")!),
-        ReceitaClass(nome: "Macarrão Quatro Queijos", ingredientes: ["Vinagre","Leite"], imagem: UIImage(named: "torta")!)
+        ReceitaClass(nome: "Bolo de Cenoura", ingredientes: ["Óleo","Cenoura","Ovos","Açúcar","Farinha","Fermento"], quantidades: [Int(0.5),3,4,2,Int(2.5),1], unidade: ["xícara","","","xícaras","xícaras","colher de sopa"], imagem: UIImage(named: "bolo"), passos: ["misturar","assar","comer"], dificuldade: 3, tempoPreparo: 40, rendimento: 8)
+
     ]
     var ingredientesTotais: [IngredienteClass] = [
         IngredienteClass(nome: "Sal", icone: UIImage(named: "sal")!),
@@ -49,12 +45,12 @@ class Model {
         IngredienteClass(nome: "Mostarda", icone: UIImage(named: "mostarda")!),
         IngredienteClass(nome: "Mel", icone: UIImage(named: "mel")!),
         IngredienteClass(nome: "Arroz", icone: UIImage(named: "arroz")!),
-        IngredienteClass(nome: "Tomates", icone: UIImage(named: "tomates")!),
+        IngredienteClass(nome: "Tomates", icone: UIImage(named: "tomate")!),
         IngredienteClass(nome: "Gengibre", icone: UIImage(named: "gengibre")!),
         IngredienteClass(nome: "Ketchup", icone: UIImage(named: "ketchup")!),
         IngredienteClass(nome: "Limão", icone: UIImage(named: "limao")!),
         IngredienteClass(nome: "Iogurte", icone: UIImage(named: "iogurte")!),
-        IngredienteClass(nome: "Maionese", icone: UIImage(named: "maionese")!),
+        IngredienteClass(nome: "Maionese", icone: UIImage(named: "mayonnaise")!),
         IngredienteClass(nome: "Feijão", icone: UIImage(named: "feijao")!),
         IngredienteClass(nome: "Pão", icone: UIImage(named: "pao")!),
         IngredienteClass(nome: "Bacon", icone: UIImage(named: "bacon")!),
@@ -65,7 +61,7 @@ class Model {
         IngredienteClass(nome: "Canela", icone: UIImage(named: "canela")!),
         IngredienteClass(nome: "Creme de Leite", icone: UIImage(named: "cremedeleite")!),
         IngredienteClass(nome: "Macarrão", icone: UIImage(named: "macarrao")!),
-        IngredienteClass(nome: "Molho de Tomate", icone: UIImage(named: "vinegar")!)
+        IngredienteClass(nome: "Oleo", icone: UIImage(named: "oleo")!)
     ]
     
     
@@ -107,4 +103,6 @@ class Model {
         }
         return receitasPossiveis
     }
+
+
 }

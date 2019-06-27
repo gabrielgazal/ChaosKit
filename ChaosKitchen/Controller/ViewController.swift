@@ -28,7 +28,7 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = (collectionView.frame.width - 3 *  spacing) / 3
-        return CGSize(width: width, height: width * 1.15)
+        return CGSize(width: width, height: width * 1.2)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -54,6 +54,7 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         
         let ingrediente = Model.shared.ingredientesTotais[indexPath.row]
         cell.imageIngrediente.image = ingrediente.icone
+        cell.imageIngrediente.layer.cornerRadius = 12
         cell.NomeIngrediente.text = ingrediente.nome
         cell.clipsToBounds = true
         cell.layer.cornerRadius = 15
