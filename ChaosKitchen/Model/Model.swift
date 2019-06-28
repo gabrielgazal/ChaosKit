@@ -23,11 +23,11 @@ class Model {
     var ingredientesSelecionados: [IngredienteClass]  = []
     var receitasPossiveis: [ReceitaClass] = []
     var receitas: [ReceitaClass] = [
-        ReceitaClass(nome: "Bolo de Cenoura", ingredientes: ["Oleo","Cenoura","Ovos","Açúcar","Farinha","Fermento"], quantidades: ["1/2","3","4","2","2 e 1/2","1"], unidade: ["xícara","","","xícaras","xícaras","colher de sopa"], imagem: UIImage(named: "bolo"), passos: ["misturar","assar","comer"], dificuldade: "Iniciante", tempoPreparo: 40, rendimento: 8)
-//
-//        ReceitaClass(nome: "bolo", ingredientes: ["Sal","Leite"], quantidades: [2.5,1], unidade: ["xicaras","colheres"], imagem: UIImage(named: "bolo"), passos: ["ddd","ddd"], dificuldade: "medio", tempoPreparo: 2, rendimento: 4)
-
-    ]
+        ReceitaClass(nome: "Bolo de Chocolate", ingredientes: ["Ovos","Chocolate","Manteiga","Farinha","Açúcar","Fermento","Leite"], quantidades: ["4","4","2","3","2","2","1"], unidade: ["","colheres de sopa","colheres de sopa","xícaras","xícaras","colheres de sopa","xícara"], imagem: UIImage(named: "bolochocolate"), passos: ["Em um liquidificador adicione os ovos, o chocolate em pó, a manteiga, a farinha de trigo, o açúcar e o leite, depois bata por 5 minutos ","Adicione o fermento e misture com uma espátula delicadamente.","Em uma forma untada, despeje a massa e asse em forno médio (180 ºC) preaquecido por cerca de 40 minutos."], dificuldade: "Iniciante", tempoPreparo: 40, rendimento: 10),
+        ReceitaClass(nome: "Macarrão ao Molho Branco", ingredientes: ["Macarrão","Oleo","Alho","Cebola","Queijo","Leite","Sal"], quantidades: ["1/2","2","2","1/2","1","1","1"], unidade: ["pacote","colheres de sopa","dentes","","xícara","caixa","pitada"], imagem: UIImage(named: "macarrao-1"), passos: ["Coloque a água para ferver (quantidade suficiente pra cobrir o macarrão) e coloque um pouco de sal, quando ela começar a ferver coloque o macarrão.","Enquanto o macarrão está fervendo em uma outra panela, adicione o óleo e a cebola, quando a cebola começar a fritar adicione o alho e deixe fritar mais um pouco, logo verá que o alho vai dourar.","Neste momento coloque o requeijão e deixe ele derreter bem, quando ele estiver bem derretido coloque a cebolinha, salsinha e o creme de leite e mexa bem, até ficar homogêneo.","Coloque sal, desligue o fogo e verifique se o macarrão está cozido.","Quando o macarrão estiver cozido, escorra ele bem e misture com o molho."], dificuldade: "Iniciante", tempoPreparo: 20, rendimento: 4),
+        ReceitaClass(nome: "Arroz Doce", ingredientes: ["Leite","Arroz", "Açucar","Canela","Leite Condensado"], quantidades: ["1 e 1/2","2","3","","1"], unidade: ["litro","xícaras","xícaras","paus","lata"], imagem: UIImage(named: "arrozdoce"), passos: ["Cozinhe o arroz no leite, juntamente com a canela (utilize uma panela grande para que o leite ferva e não derrame).","Após 20 minutos, mexa de tempos em tempos.","Acrescente o açúcar e deixe por 20 minutos.","Logo em seguida, acrescente o leite condensado e deixe por mais 20 minutos.","Tranfira para uma travessa e aguarde resfriar."], dificuldade: "Intermediário", tempoPreparo: 60, rendimento: 20)
+        
+        ]
     var ingredientesTotais: [IngredienteClass] = [
         IngredienteClass(nome: "Sal", icone: UIImage(named: "sal")!),
         IngredienteClass(nome: "Leite", icone: UIImage(named: "leite")!),
@@ -65,7 +65,9 @@ class Model {
         IngredienteClass(nome: "Canela", icone: UIImage(named: "canela")!),
         IngredienteClass(nome: "Creme de Leite", icone: UIImage(named: "cremedeleite")!),
         IngredienteClass(nome: "Macarrão", icone: UIImage(named: "macarrao")!),
-        IngredienteClass(nome: "Oleo", icone: UIImage(named: "oleo")!)
+        IngredienteClass(nome: "Oleo", icone: UIImage(named: "oleo")!),
+        IngredienteClass(nome: "Carne Moída", icone: UIImage(named: "carne")!),
+        IngredienteClass(nome: "Agua", icone: UIImage(named: "agua")!)
     ]
     
     

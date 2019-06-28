@@ -198,13 +198,13 @@
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da Receita" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="Yv4-9l-qgX">
-                                            <rect key="frame" x="35" y="41" width="99" height="41.5"/>
+                                            <rect key="frame" x="35" y="31" width="99" height="41.5"/>
                                             <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dificuldade:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4un-OK-z47">
-                                            <rect key="frame" x="35" y="82.5" width="99" height="21"/>
+                                            <rect key="frame" x="35" y="72.5" width="99" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="4un-OK-z47" secondAttribute="height" multiplier="33:7" id="wQa-Dn-4S6"/>
                                             </constraints>
@@ -213,25 +213,25 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo de preparo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1i-eo-7dX">
-                                            <rect key="frame" x="35" y="103.5" width="148.5" height="21"/>
+                                            <rect key="frame" x="35" y="93.5" width="148.5" height="21"/>
                                             <fontDescription key="fontDescription" name="Montserrat-SemiBoldItalic" family="Montserrat" pointSize="15"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dificuldadeee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="skd-GH-rs0">
-                                            <rect key="frame" x="139" y="82.5" width="104" height="21"/>
+                                            <rect key="frame" x="139" y="72.5" width="104" height="21"/>
                                             <fontDescription key="fontDescription" name="Montserrat-LightItalic" family="Montserrat" pointSize="15"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tempooo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0T-xU-4cx">
-                                            <rect key="frame" x="188.5" y="103.5" width="69" height="21"/>
+                                            <rect key="frame" x="188.5" y="93.5" width="69" height="21"/>
                                             <fontDescription key="fontDescription" name="Montserrat-LightItalic" family="Montserrat" pointSize="15"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nenhuma Receita Disponível" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z6B-5a-HJa">
-                                            <rect key="frame" x="10" y="10" width="394" height="31"/>
+                                            <rect key="frame" x="10" y="10" width="394" height="21"/>
                                             <fontDescription key="fontDescription" name="Montserrat-SemiBoldItalic" family="Montserrat" pointSize="18"/>
                                             <color key="textColor" red="0.17254901959999999" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -270,7 +270,7 @@
                                         <constraint firstItem="j1i-eo-7dX" firstAttribute="height" secondItem="4un-OK-z47" secondAttribute="height" id="pLc-oX-2Ap"/>
                                         <constraint firstAttribute="bottom" secondItem="nnF-T5-Xkr" secondAttribute="bottom" constant="10" id="vpN-kR-994"/>
                                         <constraint firstItem="590-KT-kjE" firstAttribute="centerY" secondItem="eQO-5B-Clj" secondAttribute="centerY" id="xFK-w6-ZtH"/>
-                                        <constraint firstItem="Yv4-9l-qgX" firstAttribute="top" secondItem="4EV-90-eIU" secondAttribute="topMargin" constant="30" id="z5i-2B-cPi"/>
+                                        <constraint firstItem="Yv4-9l-qgX" firstAttribute="top" secondItem="4EV-90-eIU" secondAttribute="topMargin" constant="20" id="z5i-2B-cPi"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -306,7 +306,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAf-vO-txH" customClass="RoundedButton" customModule="ChaosKitchen" customModuleProvider="target">
-                                <rect key="frame" x="41.5" y="139" width="331" height="248.5"/>
+                                <rect key="frame" x="41.5" y="114" width="331" height="248.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -318,25 +318,25 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WWH-y8-vYk">
-                                <rect key="frame" x="41.5" y="139" width="331" height="248.5"/>
+                                <rect key="frame" x="41.5" y="114" width="331" height="248.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="WWH-y8-vYk" secondAttribute="height" multiplier="4:3" id="BzI-Ej-bhS"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detalhes da receita" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEI-ld-QBY">
-                                <rect key="frame" x="0.0" y="94" width="414" height="45"/>
+                                <rect key="frame" x="0.0" y="69" width="414" height="45"/>
                                 <fontDescription key="fontDescription" name="HeadlinerNo.45" family="Headliner No. 45" pointSize="45"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nome da receita" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fUk-aG-6Tb">
-                                <rect key="frame" x="41.5" y="402.5" width="331" height="27.5"/>
+                                <rect key="frame" x="41.5" y="377.5" width="331" height="30.5"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="25"/>
                                 <color key="textColor" red="0.17254901960784313" green="0.16862745098039217" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xko-9R-c1M">
-                                <rect key="frame" x="41.5" y="445" width="331" height="54"/>
+                                <rect key="frame" x="41.5" y="423" width="331" height="54"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7FF-1E-ioa">
                                         <rect key="frame" x="0.0" y="0.0" width="331" height="24.5"/>
@@ -378,8 +378,8 @@
                                     <constraint firstItem="oV2-4e-anF" firstAttribute="width" secondItem="xko-9R-c1M" secondAttribute="width" multiplier="0.6" id="oyD-un-57z"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="rq6-Bb-0nD">
-                                <rect key="frame" x="41.5" y="504" width="331" height="328"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rq6-Bb-0nD">
+                                <rect key="frame" x="41.5" y="482" width="331" height="350"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredientes e Modo de preparo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="9Yz-M4-ckL">
                                         <rect key="frame" x="0.0" y="0.0" width="331" height="24.5"/>
@@ -388,7 +388,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4J-F1-bDd">
-                                        <rect key="frame" x="0.0" y="19.5" width="331" height="308.5"/>
+                                        <rect key="frame" x="0.0" y="23.5" width="331" height="326.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" red="0.17254901959999999" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -404,7 +404,7 @@
                             <constraint firstItem="rq6-Bb-0nD" firstAttribute="centerX" secondItem="WWH-y8-vYk" secondAttribute="centerX" id="9zN-Px-SGW"/>
                             <constraint firstItem="qAf-vO-txH" firstAttribute="centerY" secondItem="WWH-y8-vYk" secondAttribute="centerY" id="AcQ-0z-B2S"/>
                             <constraint firstItem="WWH-y8-vYk" firstAttribute="width" secondItem="x0P-Wn-XAQ" secondAttribute="width" multiplier="0.8" id="FW3-EF-92y"/>
-                            <constraint firstItem="zEI-ld-QBY" firstAttribute="top" secondItem="gnT-hs-r7M" secondAttribute="top" constant="50" id="G27-dx-2a2"/>
+                            <constraint firstItem="zEI-ld-QBY" firstAttribute="top" secondItem="gnT-hs-r7M" secondAttribute="top" constant="25" id="G27-dx-2a2"/>
                             <constraint firstItem="zEI-ld-QBY" firstAttribute="width" secondItem="x0P-Wn-XAQ" secondAttribute="width" id="IWD-OK-Xvb"/>
                             <constraint firstItem="zEI-ld-QBY" firstAttribute="centerX" secondItem="gnT-hs-r7M" secondAttribute="centerX" id="K6a-M2-nzE"/>
                             <constraint firstItem="qAf-vO-txH" firstAttribute="height" secondItem="WWH-y8-vYk" secondAttribute="height" id="Ojc-9M-K3t"/>
@@ -438,7 +438,7 @@
         <!--Início-->
         <scene sceneID="MAG-Rm-iM6">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4XU-27-EgK" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4XU-27-EgK" customClass="NavigationViewController" customModule="ChaosKitchen" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Início" image="home_2" id="jgH-Ep-ySi">
                         <color key="badgeColor" red="0.92941176469999998" green="0.27058823529999998" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBarItem>
@@ -446,9 +446,17 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tuh-hx-rBG">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.92941176469999998" green="0.27058823529999998" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.92941176469999998" green="0.27058823529999998" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" red="1" green="0.90196078430000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -498,13 +506,13 @@
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da Receita" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="9ma-99-PYw">
-                                                    <rect key="frame" x="25" y="40" width="119" height="41.5"/>
+                                                    <rect key="frame" x="25" y="30" width="119" height="41.5"/>
                                                     <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dificuldade:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXK-T1-CWl">
-                                                    <rect key="frame" x="25" y="81.5" width="98" height="21"/>
+                                                    <rect key="frame" x="25" y="71.5" width="98" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="OXK-T1-CWl" secondAttribute="height" multiplier="33:7" id="vN4-83-vi5"/>
                                                     </constraints>
@@ -513,19 +521,19 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo de preparo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Vw-0a-isD">
-                                                    <rect key="frame" x="25" y="102.5" width="147" height="18.5"/>
+                                                    <rect key="frame" x="25" y="92.5" width="147" height="18.5"/>
                                                     <fontDescription key="fontDescription" name="Montserrat-SemiBoldItalic" family="Montserrat" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dificuldadeee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mP6-wY-EN2">
-                                                    <rect key="frame" x="128" y="81.5" width="251" height="21"/>
+                                                    <rect key="frame" x="128" y="71.5" width="251" height="21"/>
                                                     <fontDescription key="fontDescription" name="Montserrat-LightItalic" family="Montserrat" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tempooo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Tn-t1-E1P">
-                                                    <rect key="frame" x="177" y="102.5" width="202" height="18.5"/>
+                                                    <rect key="frame" x="177" y="92.5" width="202" height="18.5"/>
                                                     <fontDescription key="fontDescription" name="Montserrat-LightItalic" family="Montserrat" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -542,7 +550,7 @@
                                                 <constraint firstItem="8Vw-0a-isD" firstAttribute="top" secondItem="OXK-T1-CWl" secondAttribute="bottom" id="72c-1v-60W"/>
                                                 <constraint firstItem="mP6-wY-EN2" firstAttribute="height" secondItem="OXK-T1-CWl" secondAttribute="height" id="8Ik-2t-cLk"/>
                                                 <constraint firstItem="pug-2x-Grn" firstAttribute="width" secondItem="t0U-H3-xDa" secondAttribute="width" id="8xK-ZK-zza"/>
-                                                <constraint firstItem="9ma-99-PYw" firstAttribute="top" secondItem="2BL-5P-GlG" secondAttribute="top" constant="30" id="9VL-8d-tcF"/>
+                                                <constraint firstItem="9ma-99-PYw" firstAttribute="top" secondItem="2BL-5P-GlG" secondAttribute="top" constant="20" id="9VL-8d-tcF"/>
                                                 <constraint firstAttribute="bottom" secondItem="t0U-H3-xDa" secondAttribute="bottom" constant="10" id="CuY-Or-fKP"/>
                                                 <constraint firstItem="dx6-O6-aim" firstAttribute="height" secondItem="t0U-H3-xDa" secondAttribute="height" id="Dyy-Kp-Z1S"/>
                                                 <constraint firstItem="t0U-H3-xDa" firstAttribute="top" secondItem="RZI-LB-UCA" secondAttribute="top" constant="10" id="F93-6C-rZX"/>

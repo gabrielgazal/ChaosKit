@@ -53,28 +53,29 @@ class ReceitasTableViewController: UITableViewController {
     
    
     
-//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//
-//        let viewAa = UIView()
-//        let textoHeader = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 75))
-//        textoHeader.text = "RECEITAS POSSÍVEIS"
-//        textoHeader.font = UIFont(name: "Headliner No. 45", size: 50)
-//        textoHeader.textColor = UIColor(hue: 360.0, saturation: 0.0, brightness: 0.17, alpha: 1.0)
-//        textoHeader.textAlignment = .center
-//        textoHeader.sizeToFit()
-//        textoHeader.adjustsFontSizeToFitWidth = true
-//
-//        viewAa.addSubview(textoHeader)
-//        viewAa.frame.size.height = 80
-//        textoHeader.center.x = self.view.center.x
-//        textoHeader.center.y = viewAa.center.y
-//
-//        return viewAa
-//    }
-//    
-//    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return 75
-//    }
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+
+        let viewAa = UIView()
+        let textoHeader = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 75))
+        textoHeader.text = "RECEITAS POSSÍVEIS"
+        textoHeader.font = UIFont(name: "Headliner No. 45", size: 50)
+        textoHeader.textColor = UIColor(hue: 360.0, saturation: 0.0, brightness: 0.17, alpha: 1.0)
+        textoHeader.textAlignment = .center
+        textoHeader.sizeToFit()
+        textoHeader.adjustsFontSizeToFitWidth = true
+
+        viewAa.addSubview(textoHeader)
+        viewAa.frame.size.height = 80
+        textoHeader.center.x = self.view.center.x
+        textoHeader.center.y = viewAa.center.y
+
+        return viewAa
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+        
+    }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "celula", for: indexPath) as! TableViewCell
         

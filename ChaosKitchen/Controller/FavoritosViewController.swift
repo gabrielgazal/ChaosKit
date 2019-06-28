@@ -44,6 +44,8 @@ class FavoritosViewController: UIViewController, UITableViewDelegate, UITableVie
         }
         cell.fotoReceita.layer.cornerRadius = 15
         cell.filtroFoto.layer.cornerRadius = 15
+        cell.filtroFoto.layer.borderWidth = 3
+        cell.filtroFoto.layer.borderColor = UIColor(hue: 0.13, saturation: 0.9, brightness: 0.93, alpha: 100).cgColor
         
         
         

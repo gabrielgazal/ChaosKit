@@ -24,6 +24,7 @@
 		56650AB122C0231E005DCBD3 /* Ingrediente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56650AB022C0231E005DCBD3 /* Ingrediente.swift */; };
 		56650AB322C02328005DCBD3 /* Rceita.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56650AB222C02328005DCBD3 /* Rceita.swift */; };
 		5679DCA822C5429000F20605 /* FavoritosCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5679DCA722C5429000F20605 /* FavoritosCellTableViewCell.swift */; };
+		5679DCAE22C677A600F20605 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5679DCAD22C677A600F20605 /* NavigationViewController.swift */; };
 		5687451C22C14987003F3634 /* ReceitasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5687451B22C14987003F3634 /* ReceitasTableViewController.swift */; };
 		5687451E22C149D6003F3634 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5687451D22C149D6003F3634 /* TableViewCell.swift */; };
 		5687452022C150FD003F3634 /* DetalheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5687451F22C150FD003F3634 /* DetalheViewController.swift */; };
@@ -50,6 +51,7 @@
 		56650AB022C0231E005DCBD3 /* Ingrediente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingrediente.swift; sourceTree = "<group>"; };
 		56650AB222C02328005DCBD3 /* Rceita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rceita.swift; sourceTree = "<group>"; };
 		5679DCA722C5429000F20605 /* FavoritosCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosCellTableViewCell.swift; sourceTree = "<group>"; };
+		5679DCAD22C677A600F20605 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		5687451B22C14987003F3634 /* ReceitasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceitasTableViewController.swift; sourceTree = "<group>"; };
 		5687451D22C149D6003F3634 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		5687451F22C150FD003F3634 /* DetalheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				5687451F22C150FD003F3634 /* DetalheViewController.swift */,
 				5692086722C534C000F77691 /* FavoritosViewController.swift */,
 				5679DCA722C5429000F20605 /* FavoritosCellTableViewCell.swift */,
+				5679DCAD22C677A600F20605 /* NavigationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56650AB322C02328005DCBD3 /* Rceita.swift in Sources */,
+				5679DCAE22C677A600F20605 /* NavigationViewController.swift in Sources */,
 				56648D1B22C340A400AD4C49 /* rounded.swift in Sources */,
 				5687451E22C149D6003F3634 /* TableViewCell.swift in Sources */,
 				56650AAF22C0230B005DCBD3 /* Model.swift in Sources */,
