@@ -16,6 +16,8 @@ class DetalheViewController: UIViewController {
     @IBOutlet weak var tempo: UILabel!
     @IBOutlet weak var ingredientes: UITextView!
     
+    var receita: ReceitaClass!
+    
     var receitaSelecionada = 0
 
     override func viewDidLoad() {
@@ -25,24 +27,22 @@ class DetalheViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         
-        let recpt = Model.shared.receitasPossiveis[receitaSelecionada]
-
-        imagemReceita.image = recpt.imagem
-        nomeReceita.text = recpt.nome
-        dificuldad.text = recpt.dificuldade
-        tempo.text = "\(recpt.tempoPreparo) minutos"
+        imagemReceita.image = receita.imagem
+        nomeReceita.text = receita.nome
+        dificuldad.text = receita.dificuldade
+        tempo.text = "\(receita.tempoPreparo) minutos"
         ingredientes.text = ""
         
-        for (indice,item) in recpt.ingredientes.enumerated() {
-            ingredientes.text += "- \(recpt.quantidades[indice]) "
-            if recpt.unidade[indice] != "" {
-                ingredientes.text += "\(recpt.unidade[indice]) de "
+        for (indice,item) in receita.ingredientes.enumerated() {
+            ingredientes.text += "- \(receita.quantidades[indice]) "
+            if receita.unidade[indice] != "" {
+                ingredientes.text += "\(receita.unidade[indice]) de "
             }
             ingredientes.text += "\(item) \n"
         }
         
-        for (indice2, item2) in recpt.passos.enumerated(){
-            ingredientes.text  += "\n Passo \(indice2 + 1): \(recpt.passos[indice2])"
+        for (indice2, item2) in receita.passos.enumerated(){
+            ingredientes.text  += "\n Passo \(indice2 + 1): \(receita.passos[indice2])"
 
         }
         imagemReceita.layer.cornerRadius = 15

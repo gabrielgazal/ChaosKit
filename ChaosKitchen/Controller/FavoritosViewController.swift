@@ -55,13 +55,17 @@ class FavoritosViewController: UIViewController, UITableViewDelegate, UITableVie
 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "detalhe") as? DetalheViewController{
+        performSegue(withIdentifier: "mostrar", sender: Model.shared.receitaFav[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? DetalheViewController {
             if Model.shared.receitaFav.count != 0{
-                vc.receitaSelecionada = indexPath.row
-                self.navigationController?.pushViewController(vc, animated: true)
+                vc.receita = (sender as! ReceitaClass)
             }
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableVoiewFav.delegate = self
