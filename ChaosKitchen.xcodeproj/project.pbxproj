@@ -52,6 +52,7 @@
 		56650AB222C02328005DCBD3 /* Rceita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rceita.swift; sourceTree = "<group>"; };
 		5679DCA722C5429000F20605 /* FavoritosCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosCellTableViewCell.swift; sourceTree = "<group>"; };
 		5679DCAD22C677A600F20605 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		5679DCAF22C6B2EE00F20605 /* ChaosKitchen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChaosKitchen.entitlements; sourceTree = "<group>"; };
 		5687451B22C14987003F3634 /* ReceitasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceitasTableViewController.swift; sourceTree = "<group>"; };
 		5687451D22C149D6003F3634 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		5687451F22C150FD003F3634 /* DetalheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +102,7 @@
 		56650A9822C0227B005DCBD3 /* ChaosKitchen */ = {
 			isa = PBXGroup;
 			children = (
+				5679DCAF22C6B2EE00F20605 /* ChaosKitchen.entitlements */,
 				56648CCB22C33C8200AD4C49 /* Fonts */,
 				56650AAC22C022A0005DCBD3 /* Model */,
 				56650AAB22C02290005DCBD3 /* View */,
@@ -179,6 +181,11 @@
 				TargetAttributes = {
 					56650A9522C0227B005DCBD3 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -382,6 +389,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ChaosKitchen/ChaosKitchen.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7994PXZY59;
 				INFOPLIST_FILE = ChaosKitchen/Info.plist;
@@ -400,6 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ChaosKitchen/ChaosKitchen.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7994PXZY59;
 				INFOPLIST_FILE = ChaosKitchen/Info.plist;
